@@ -15,8 +15,8 @@
 # Inherit device configuration
 $(call inherit-product, device/semc/haida/full_haida.mk)
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_mini_phone.mk)
+# Inherit some common Glade stuff.
+$(call inherit-product, vendor/glade/config/common_mini_phone.mk)
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -26,8 +26,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="MT11i-user 4.0.4 4.1.B.0.587 tL1_3w test-keys"
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := cm_haida
+PRODUCT_NAME := glade_haida
 PRODUCT_GMS_CLIENTID_BASE := android-sonyericsson
-
-# Custom tag for unofficial builds
-TARGET_UNOFFICIAL_BUILD_ID := LegacyXperia
